@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Step4of4</title>
+</head>
+
+<body>
+  <main>
+
+    <header>
+      <div><img src="" alt=""></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">step1of4</a>
+          </li>
+          <li><a href="index2.html">step2of4</a>
+          </li>
+          <li><a href="index3.html">step3of4</a>
+          </li>
+          <li><a href="index4.html">step4of4</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <h1> Sign up to yourcustomtailor.com </h1>
+      <h2>Step 4 of 4 </h2>
+      <strong>Progress</strong>
+      <div class="progress">
+        <div class="percentage" style="width: 95%"></div>
+      </div>
+      <p>Please fill in your payment data</p>
+    </div>
+    <div>
+      <form>
+        <div>
+          <label for="cardname"><span>Name of card</span> </label>
+          <input type="text" class="name-field" id="cardname" required="" pattern="[A-Za-z]{3}">
+        </div>
+        <div>
+          <label for="cardtype"><span>Card type</span> </label>
+          <select name="card-type" id="cardtype" class="input-field">
+            <option value="IND">Dankort</option>
+            <option value="AFG">Mastercard</option>
+            <option value="AFG">Visa</option>
+          </select>
+        </div>
+        <div>
+          <label for="cardnumber"><span>Credit card number*</span> </label>
+          <input type="tel" id="cardnumber" class="name-field" pattern="\d{4}-?\d{4}-?\d{4}-?\d{4}" required=""
+            title="Only numbers allowed, Exactly 16 digits.">
+          <label for="firstname"><span>First Name*</span> </label>
+          <input type="text" class="name-field" id="firstname" required="">
+        </div>
+        <div>
+          <label for="expirymonth"><span>Expiry month*</span> </label>
+          <input type="month" id="expirymonth" class="box-field" required="">
+          <label for="number"><span>Expiry year*</span> </label>
+          <input type="date" id="number" class="box-field" required="">
+        </div>
+        <div>
+          <label for="ccv"><span>CCV*</span> </label>
+          <input type="tel" id="ccv" class="box-field" required="" maxlength="3" minlength="3"
+            title="Only numbers. Exactly 3 digits.">
+        </div>
+        <div>
+          <a> Submit</a>
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>
